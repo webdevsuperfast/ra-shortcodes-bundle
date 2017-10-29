@@ -160,7 +160,7 @@ function rasb_custom_button_shortcode( $atts, $content = null ) {
 	if ( !empty( $atts['background_hover'] ) ) {
 		$hover = $atts['background_hover'];
 	} elseif ( empty( $atts['background_hover'] ) && !empty( $atts['background'] ) ) {
-		$hover = color_luminance( $atts['background'], -0.1 );
+		$hover = rasb_color_luminance( $atts['background'], -0.1 );
 	} else {
 		$hover = 'transparent';
 	}
@@ -168,7 +168,7 @@ function rasb_custom_button_shortcode( $atts, $content = null ) {
 	if ( !empty( $atts['background_hover'] ) ) {
 		$hover = $atts['background_hover'];
 	} else {
-		$hover = color_luminance( $atts['background'], -0.1 );
+		$hover = rasb_color_luminance( $atts['background'], -0.1 );
 	}
 
 	if ( $atts['type'] == 'border' ) {

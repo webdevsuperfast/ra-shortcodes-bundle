@@ -27,11 +27,11 @@ class RASB_Shortcodes {
             require_once( plugin_dir_path( __FILE__ ) . 'lib/rasb-image-resize.php' );
         }
 
-        if ( function_exists( 'mr_image_resize' ) )
+        if ( function_exists( 'rasb_image_resize' ) )
             require_once( plugin_dir_path( __FILE__ ) . 'lib/misc.php' );
 
         //* Color Luminance
-        if ( !function_exists( 'color_luminance' ) ) {
+        if ( !function_exists( 'rasb_color_luminance' ) ) {
             require_once( plugin_dir_path( __FILE__ ) . 'lib/luminance.php' );
         }
 
