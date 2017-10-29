@@ -125,9 +125,9 @@ function rasb_custom_image_shortcode( $atts, $content = null ) {
 
 	ob_start(); ?>
 	<?php echo $atts['div'] ? '<div class="image-wrapper">' : ''; ?>
-	<?php echo $atts['url'] ? '<a href="'.esc_url( $atts['url'] ).'">' : ''; ?>
-	<img <?php foreach( $attributes as $name => $value ) echo $name . '="' . $value . '" ' ?> />
-	<?php echo $atts['url'] ? '</a>' : ''; ?>
+		<?php echo $atts['url'] ? '<a href="'.esc_url( $atts['url'] ).'">' : ''; ?>
+			<img <?php foreach( $attributes as $name => $value ) echo $name . '="' . $value . '" ' ?> />
+		<?php echo $atts['url'] ? '</a>' : ''; ?>
 	<?php echo $atts['div'] ? '</div>' : ''; ?>
 	
 	<?php

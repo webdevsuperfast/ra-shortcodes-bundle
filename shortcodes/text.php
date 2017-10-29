@@ -118,7 +118,6 @@ function rasb_custom_text_shortcode( $atts, $content = null ) {
 		'margin' => '',
 		'height' => '',
 		'spacing' => '',
-		// 'instance' => $instance,
 		'icon' => '',
 		'icon_color' => '#333',
 		'icon_size' => ''
@@ -134,8 +133,6 @@ function rasb_custom_text_shortcode( $atts, $content = null ) {
 	$classes[] = 'rasb_text';
 	$classes[] = 'text';
 	if ( !empty( $atts['class'] ) ) $classes[] = $atts['class'];
-
-	// var_dump( $atts['icon'] );
 
 	$styles = array();
 	if ( !empty( $atts['size'] ) ) $styles['fontSize'] = $atts['size'] . 'px';
@@ -154,13 +151,6 @@ function rasb_custom_text_shortcode( $atts, $content = null ) {
 		$styles['tabletSize'] = ($atts['size'] - $atts['size']/4) . 'px';
 	}
 
-	$icon_styles = array();
-
-	if ( !empty( $atts['icon'] ) ) {
-		// $icon_styles['padding-left'] = $atts['icon_size'] + '10' . 'px';
-		// $icon_styles['position'] = 'relative';
-	}
-
 	wp_enqueue_script( 'rasb-vein-js' );
 	wp_enqueue_script( 'rasb-shortcodes-js' );
 	wp_localize_script( 'rasb-shortcodes-js', 'text' . $instance, $styles );
@@ -168,13 +158,11 @@ function rasb_custom_text_shortcode( $atts, $content = null ) {
 	$attributes = array(
 		'class' => esc_attr( implode( ' ', $classes ) ),
 		'id' => $selector,
-		'style' => implode('; ', array_map( function ( $v, $k ) { return $k . ':' . $v; }, $icon_styles, array_keys( $icon_styles ) ) ),
 		'data-instance' => $instance
 	);
 
 	ob_start(); ?>
 
-	<?php do_action( 'rasb_text_before', $atts ); ?>
 	<?php
 	// Built-in icon
 	if ( $atts['icon'] ) {
@@ -188,11 +176,11 @@ function rasb_custom_text_shortcode( $atts, $content = null ) {
 		}
 	} 
 	?>
+
 	<<?php echo $atts['tag']; ?> <?php foreach( $attributes as $name => $value ) echo $name . '="' . $value . '" ' ?>>
-	<?php echo $atts['icon']; ?>
-	<?php echo su_do_shortcode( $content, 's' ); ?>
+		<?php echo $atts['icon']; ?>
+		<?php echo su_do_shortcode( $content, 's' ); ?>
 	</<?php echo $atts['tag']; ?>>
-	<?php do_action( 'rasb_text_after', $atts ); ?>
 
 	<?php $output = ob_get_clean();
 	return $output;

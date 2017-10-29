@@ -222,11 +222,9 @@ function rasb_custom_button_shortcode( $atts, $content = null ) {
 		'class' => esc_attr( implode( ' ', $classes ) ),
 		'id' => $selector,
 		'data-instance' => $instance
-		// 'style' => implode('; ', array_map( function ( $v, $k ) { return $k . ':' . $v; }, $styles, array_keys( $styles ) ) )
 	);
 
 	$spans = array(
-		// 'style' => implode( '; ', array_map( function ( $v, $k ) { return $k . ':' . $v; }, $wraps, array_keys( $wraps ) ) ),
 		'class' => 'btn-wrap'
 	);
 
@@ -236,9 +234,9 @@ function rasb_custom_button_shortcode( $atts, $content = null ) {
 	ob_start(); ?>
 
 	<a <?php foreach( $attributes as $name => $value ) echo $name . '="' . $value . '" ' ?>>
-	<span <?php foreach( $spans as $name => $value ) echo $name . '="' . $value . '" ' ?>>
-	<?php echo do_shortcode( $content ); ?>
-	</span>
+		<span <?php foreach( $spans as $name => $value ) echo $name . '="' . $value . '" ' ?>>
+			<?php echo do_shortcode( $content ); ?>
+		</span>
 	</a>
 
 	<?php $output = ob_get_clean();
