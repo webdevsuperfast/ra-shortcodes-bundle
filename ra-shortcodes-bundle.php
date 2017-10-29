@@ -23,8 +23,8 @@ class RASB_Shortcodes {
         }
 
         //* Mr Image Resize
-        if ( !function_exists( 'mr_image_resize' ) ) {
-            require_once( plugin_dir_path( __FILE__ ) . 'lib/mr-image-resize.php' );
+        if ( !function_exists( 'rasb_image_resize' ) ) {
+            require_once( plugin_dir_path( __FILE__ ) . 'lib/rasb-image-resize.php' );
         }
 
         if ( function_exists( 'mr_image_resize' ) )
