@@ -16,9 +16,8 @@ function rasb_register_button_shortcode( $shortcodes ) {
 			),
 			'type' => array(
 				'type' => 'select',
-				'default' => '',
+				'default' => 'rounded',
 				'values' => array(
-					'default' => 'None',
 					'flat' => 'Flat',
 					'rounded' => 'Rounded',
 					'ghost' => 'Border'
