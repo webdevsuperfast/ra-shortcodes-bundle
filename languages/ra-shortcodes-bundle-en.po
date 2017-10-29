@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RA Shortcodes Bundle\n"
+"POT-Creation-Date: 2017-10-29 21:16+0800\n"
+"PO-Revision-Date: 2017-10-29 21:16+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ra-shortcodes-bundle.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ra-shortcodes-bundle.php:41
+msgid "RA Shortcodes"
+msgstr ""
+
+#: shortcodes/button.php:7
+msgid "Button"
+msgstr ""
+
+#: shortcodes/button.php:14 shortcodes/image.php:12 shortcodes/text.php:12
+msgid "Class"
+msgstr ""
+
+#: shortcodes/button.php:15
+msgid "Button class"
+msgstr ""
+
+#: shortcodes/button.php:32
+msgid "Button color"
+msgstr ""
+
+#: shortcodes/button.php:33
+msgid "Button background color"
+msgstr ""
+
+#: shortcodes/button.php:39
+msgid "Button hover color"
+msgstr ""
+
+#: shortcodes/button.php:40
+msgid "Button background color on hover"
+msgstr ""
+
+#: shortcodes/button.php:46 shortcodes/text.php:82
+msgid "Text color"
+msgstr ""
+
+#: shortcodes/button.php:47
+msgid "Text font color"
+msgstr ""
+
+#: shortcodes/button.php:53
+msgid "Text hover color"
+msgstr ""
+
+#: shortcodes/button.php:54
+msgid "Text font color on hover"
+msgstr ""
+
+#: shortcodes/button.php:62
+msgid "Padding"
+msgstr ""
+
+#: shortcodes/button.php:63
+msgid "Button padding"
+msgstr ""
+
+#: shortcodes/button.php:71
+msgid "Border Radius"
+msgstr ""
+
+#: shortcodes/button.php:72
+msgid "Border radius"
+msgstr ""
+
+#: shortcodes/button.php:80
+msgid "Border Width"
+msgstr ""
+
+#: shortcodes/button.php:81
+msgid "Button border width"
+msgstr ""
+
+#: shortcodes/button.php:89 shortcodes/text.php:47
+msgid "Font Size"
+msgstr ""
+
+#: shortcodes/button.php:90
+msgid "Button font size"
+msgstr ""
+
+#: shortcodes/button.php:98 shortcodes/image.php:30
+msgid "Width"
+msgstr ""
+
+#: shortcodes/button.php:99
+msgid "Button width on tablet and largescreen devices."
+msgstr ""
+
+#: shortcodes/button.php:107 shortcodes/image.php:63 shortcodes/text.php:90
+msgid "Margin"
+msgstr ""
+
+#: shortcodes/button.php:108 shortcodes/text.php:91
+msgid "Bottom margin"
+msgstr ""
+
+#: shortcodes/button.php:117
+msgid "Target"
+msgstr ""
+
+#: shortcodes/button.php:118
+msgid "Button target"
+msgstr ""
+
+#: shortcodes/button.php:123
+msgid "URL"
+msgstr ""
+
+#: shortcodes/button.php:124
+msgid "Button URL"
+msgstr ""
+
+#: shortcodes/button.php:127 shortcodes/button.php:128
+msgid "Button text"
+msgstr ""
+
+#: shortcodes/countdown.php:5
+msgid "Countdown"
+msgstr ""
+
+#: shortcodes/countdown.php:12
+msgid "Countdown Class"
+msgstr ""
+
+#: shortcodes/countdown.php:21
+msgid "Year"
+msgstr ""
+
+#: shortcodes/countdown.php:30
+msgid "Month"
+msgstr ""
+
+#: shortcodes/countdown.php:39
+msgid "Day"
+msgstr ""
+
+#: shortcodes/countdown.php:48
+msgid "Hour"
+msgstr ""
+
+#: shortcodes/countdown.php:57
+msgid "Minute"
+msgstr ""
+
+#: shortcodes/countdown.php:62 shortcodes/image.php:74 shortcodes/text.php:95
+msgid "Text content"
+msgstr ""
+
+#: shortcodes/image.php:5
+msgid "Image"
+msgstr ""
+
+#: shortcodes/image.php:13
+msgid "Image class"
+msgstr ""
+
+#: shortcodes/image.php:18
+msgid "Image Source"
+msgstr ""
+
+#: shortcodes/image.php:19
+msgid "Off-site images won't be resized."
+msgstr ""
+
+#: shortcodes/image.php:24
+msgid "Alt"
+msgstr ""
+
+#: shortcodes/image.php:25
+msgid "Alt text"
+msgstr ""
+
+#: shortcodes/image.php:31
+msgid "Image width"
+msgstr ""
+
+#: shortcodes/image.php:36
+msgid "Height"
+msgstr ""
+
+#: shortcodes/image.php:37
+msgid "Image height"
+msgstr ""
+
+#: shortcodes/image.php:42
+msgid "Link"
+msgstr ""
+
+#: shortcodes/image.php:43
+msgid "Image link"
+msgstr ""
+
+#: shortcodes/image.php:54 shortcodes/text.php:74
+msgid "Alignment"
+msgstr ""
+
+#: shortcodes/image.php:55 shortcodes/text.php:75
+msgid "Text alignment"
+msgstr ""
+
+#: shortcodes/image.php:64
+msgid "Image margin based on chosen alignment"
+msgstr ""
+
+#: shortcodes/image.php:69
+msgid "Add enclosing div tags?"
+msgstr ""
+
+#: shortcodes/text.php:5 shortcodes/text.php:94
+msgid "Text"
+msgstr ""
+
+#: shortcodes/text.php:13
+msgid "Text class"
+msgstr ""
+
+#: shortcodes/text.php:18
+msgid "Tag"
+msgstr ""
+
+#: shortcodes/text.php:19
+msgid "HTML tag"
+msgstr ""
+
+#: shortcodes/text.php:24
+msgid "Icon"
+msgstr ""
+
+#: shortcodes/text.php:25
+msgid "You can upload custom icon for this box"
+msgstr ""
+
+#: shortcodes/text.php:30
+msgid "Icon color"
+msgstr ""
+
+#: shortcodes/text.php:31
+msgid ""
+"This color will be applied to the selected icon. Does not work with uploaded "
+"icons"
+msgstr ""
+
+#: shortcodes/text.php:39
+msgid "Icon Size"
+msgstr ""
+
+#: shortcodes/text.php:55
+msgid "Letter Spacing"
+msgstr ""
+
+#: shortcodes/text.php:63
+msgid "Line Height"
+msgstr ""
+
+#: shortcodes/text.php:68
+msgid "None"
+msgstr ""
+
+#: shortcodes/text.php:69
+msgid "Center"
+msgstr ""
+
+#: shortcodes/text.php:70
+msgid "Left"
+msgstr ""
+
+#: shortcodes/text.php:71
+msgid "Right"
+msgstr ""
+
+#: shortcodes/text.php:81
+msgid "Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "RA Shortcodes Bundle"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/webdevsuperfast/ra-shortcodes-bundle"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A collection of shortcodes for WordPress built using the Shortcodes Ultimate "
+"plugin API."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Rotsen Mark Acob"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://rotsenacob.com"
+msgstr ""
