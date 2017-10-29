@@ -58,7 +58,7 @@ function rasb_register_countdown_shortcode( $shortcodes ) {
 				'desc' => ''
 			),
 		),
-		'content' => __( '', 'ra-shortcodes-bundle' ),
+		'content' => '',
 		'desc' => __( 'Text content', 'ra-shortcodes-bundle' ),
 		'icon' => 'code',
 		'function' => 'rasb_custom_countdown_shortcode' 
