@@ -93,54 +93,6 @@
 		});
 	}
 
-	//* Content Box Shortcode
-	if($('.rasb_box').length > 0) {
-		$('.rasb_box').each(function(index){
-			var instance = $(this).data('instance');
-			boxInstance(instance);
-		});
-	}
-
-	function boxInstance(instance) {
-		var box = window['box' + instance];
-
-		var fontSize = box.fontSize,
-			padding= box.padding,
-			lineHeight = box.height,
-			backgroundColor = box.backgroundColor,
-			letterSpacing = box.letterSpacing,
-			width = box.width,
-			color = box.color,
-			marginBottom = box.marginBottom,
-			textAlign = box.textAlign,
-			tabletWidth = box.tabletWidth;
-
-		vein.inject(['#box-'+instance+''], {
-			'font-size' : ''+fontSize+'',
-			'padding' : ''+padding+' !important',
-			'line-height' : ''+lineHeight+'',
-			'background-color' : ''+backgroundColor+'',
-			'letter-spacing' : ''+letterSpacing+'',
-			'width' : ''+width+'',
-			'color' : ''+color+'',
-			'margin-bottom' : ''+marginBottom+'',
-			'text-align' : ''+textAlign+''
-		});
-
-		vein.inject([{
-			'@media only screen  and (max-width: 991px)': ['#box-'+instance+'']
-		}], {
-			'width': ''+tabletWidth+' !important'
-		});
-
-		vein.inject([{
-			'@media  only screen and (max-width: 767px)': ['#box-'+instance+'']
-		}], {
-			'width': '100% !important',
-			'margin-left': '0'
-		});
-	}
-
 	//* Text Shortcode
 	if($('.rasb_text').length > 0) {
 		$('.rasb_text').each(function(index){
