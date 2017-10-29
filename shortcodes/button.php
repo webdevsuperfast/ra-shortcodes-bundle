@@ -30,28 +30,28 @@ function rasb_register_button_shortcode( $shortcodes ) {
 				'values' => array( ),
 				'default' => '',
 				'name' => __( 'Button color', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Button background color', 'ra-shortcodes-bundle' )
 			),
 			'background_hover' => array(
 				'type' => 'color',
 				'values' => array( ),
 				'default' => '',
 				'name' => __( 'Button hover color', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Button background color on hover', 'ra-shortcodes-bundle' )
 			),
 			'color' => array(
 				'type' => 'color',
 				'values' => array( ),
 				'default' => '',
 				'name' => __( 'Text color', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Text font color', 'ra-shortcodes-bundle' )
 			),
 			'color_hover' => array(
 				'type' => 'color',
 				'values' => array( ),
 				'default' => '',
 				'name' => __( 'Text hover color', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Text font color on hover', 'ra-shortcodes-bundle' )
 			),
 			'padding' => array(
 				'type' => 'number',
@@ -78,7 +78,7 @@ function rasb_register_button_shortcode( $shortcodes ) {
 				'step' => 1,
 				'default' => 0,
 				'name' => __( 'Border Width', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Button border width', 'ra-shortcodes-bundle' )
 			),
 			'size' => array(
 				'type' => 'number',
@@ -87,7 +87,7 @@ function rasb_register_button_shortcode( $shortcodes ) {
 				'step' => 1,
 				'default' => '',
 				'name' => __( 'Font Size', 'ra-shortcodes-bundle' ),
-				'desc' => __( 'Font size', 'ra-shortcodes-bundle' )
+				'desc' => __( 'Button font size', 'ra-shortcodes-bundle' )
 			),
 			'width' => array(
 				'type' => 'number',

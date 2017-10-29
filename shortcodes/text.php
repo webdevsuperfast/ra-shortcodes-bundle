@@ -22,13 +22,13 @@ function rasb_register_text_shortcode( $shortcodes ) {
 				'type' => 'icon',
 				'default' => '',
 				'name' => __( 'Icon', 'ra-shortcodes-bundle' ),
-				'desc' => __( 'You can upload custom icon for this box', 'shortcodes-ultimate' )
+				'desc' => __( 'You can upload custom icon for this box', 'ra-shortcodes-bundle' )
 			),
 			'icon_color' => array(
 				'type' => 'color',
 				'default' => '#333333',
 				'name' => __( 'Icon color', 'ra-shortcodes-bundle' ),
-				'desc' => __( 'This color will be applied to the selected icon. Does not works with uploaded icons', 'shortcodes-ultimate' )
+				'desc' => __( 'This color will be applied to the selected icon. Does not work with uploaded icons', 'shortcodes-bundle' )
 			),
 			'icon_size' => array(
 				'type' => 'number',
@@ -36,8 +36,7 @@ function rasb_register_text_shortcode( $shortcodes ) {
 				'max' => 1000,
 				'step' => 1,
 				'default' => '',
-				'name' => __( 'Icon Size', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
+				'name' => __( 'Icon Size', 'ra-shortcodes-bundle' )
 			),
 			'size' => array(
 				'type' => 'number',
@@ -45,8 +44,7 @@ function rasb_register_text_shortcode( $shortcodes ) {
 				'max' => 1000,
 				'step' => 1,
 				'default' => '',
-				'name' => __( 'Font Size', 'ra-shortcodes-bundle' ),
-				'desc' => __( 'Font size', 'ra-shortcodes-bundle' )
+				'name' => __( 'Font Size', 'ra-shortcodes-bundle' )
 			),
 			'spacing' => array(
 				'type' => 'slider',
@@ -55,7 +53,6 @@ function rasb_register_text_shortcode( $shortcodes ) {
 				'step' => 0.05,
 				'default' => '',
 				'name' => __( 'Letter Spacing', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
 			),
 			'height' => array(
 				'type' => 'number',
@@ -64,15 +61,14 @@ function rasb_register_text_shortcode( $shortcodes ) {
 				'step' => 1,
 				'default' => '',
 				'name' => __( 'Line Height', 'ra-shortcodes-bundle' ),
-				'desc' => __( '', 'ra-shortcodes-bundle' )
 			),
 			'alignment' => array(
 				'type' => 'select',
 				'values' => array(
-					'none' => 'None',
-					'center' => 'Center',
-					'left' => 'Left',
-					'right' => 'Right'
+					'none' => __( 'None' ),
+					'center' => __( 'Center' ),
+					'left' => __( 'Left' ),
+					'right' => __( 'Right' )
 				),
 				'default' => 'none',
 				'name' => __( 'Alignment', 'ra-shortcodes-bundle' ),
