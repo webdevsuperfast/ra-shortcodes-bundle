@@ -1,0 +1,135 @@
+// Variables
+$button-font: "Open Sans", sans-serif;
+$button-font-weight: 700;
+$button-color: #FF8400;
+$body-color: #666;
+
+// Extends
+// Font Weight, Style, Text Transform, Alignment
+$weights: (thin, 100), (extralight, 200), (light, 300), (normal, 400), (medium, 500), (semibold, 600), (bold, 700), (extrabold,800), (heavy, 900);
+$styles: italic, oblique, normal, inherit, initial, unset;
+$transforms: capitalize, uppercase, lowercase, none, full-width;
+$alignments: none, left, right, center;
+$displays: inline, inline-block, table, table-cell, flex, none, unset;
+
+// Font Weight
+@each $weight, $value in $weights {
+	.text-#{$weight} {
+		font-weight: $value;
+	}
+}
+
+// Font Style
+@each $style in $styles {
+	.text-#{$style} {
+		font-style: $style;
+	}
+}
+
+// Text Transform
+@each $transform in $transforms {
+	.text-#{$transform} {
+		text-transform: $transform;
+	}
+}
+
+// Text Alignment
+@each $alignment in $alignments {
+	.text-#{$alignment} {
+		text-align: $alignment;
+	}
+}
+
+// Display
+@each $display in $displays {
+	.display-#{$display} {
+		display: $display;
+	}
+} 
+
+//* Icons & Type Alignment Fix
+// @link http://snook.ca/archives/html_and_css/icons-and-type
+@mixin icon-type {
+	display: inline-block;
+	position: relative;
+	top: -0.1em;
+	vertical-align: middle;
+}
+
+@mixin button {
+	// text-transform: uppercase;
+	// color: $button-color;
+	display: inline-block;
+	margin-bottom: 0; // For input.btn
+	// font-family: $button-font;
+	// font-weight: $button-font-weight;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid transparent;
+	white-space: nowrap;
+	line-height: 1;	
+}
+
+/* ## Button Shortcode ------------------------------------------------------ */
+.rasb_button {
+	@include button;
+	&.btn {
+		&-flat {
+			border-radius: 0px !important;
+		}
+		&-default {
+			background-color: rgba($body-color, 0) !important;
+			border: none !important;
+			&:hover, &:focus {
+				background-color: rgba($body-color, 0) !important;
+			}
+		}
+	}	
+	.btn-wrap {
+		display: inline-block;
+		line-height: 1;
+	}
+}
+
+/* ## Text Shortcode -------------------------------------------------------- */
+.rasb_text {
+	.icon-font, .icon-img {
+		@include icon-type;
+	}
+}
+
+/* ## Hero Shortcode -------------------------------------------------------- */
+.rasb_hero {
+	.hero-container {
+		// background: rgba($button-color, 0.75);
+		.hero-title {
+			h2 {
+				margin: 0;
+				text-transform: uppercase;
+			}
+		}
+		.hero-content {
+			
+		}
+	}
+}
+
+/* ## Panel Shortcode
+----------------------------------------------------------------------------- */
+.rasb_panel {
+	&.left-align {
+		.panel-icon {
+			float: left;
+			margin-right: 10px;
+		}
+		.panel-title, .panel-content {
+			padding-left: 80px;
+		}
+	}
+	&.basic {
+		text-align: center;
+	}
+}
