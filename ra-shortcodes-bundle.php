@@ -52,6 +52,7 @@ class RASB_Shortcodes {
             // Vein JS
             wp_register_script( 'rasb-vein-js', plugin_dir_url( __FILE__ ) . 'public/js/vein.min.js', array( 'jquery' ), null, true );
 
+            // Countdown JS
             wp_register_script( 'rasb-countdown-js', plugin_dir_url( __FILE__ ) . 'public/js/jquery.countdown.min.js', array( 'jquery' ), null, true );
 
             // Shortcode JS
