@@ -38,7 +38,7 @@ Yes, you should install the Shortcodes Ultimate plugin first to enjoy the benefi
 
 The styles are rendered using Javascript via VeinJS so you will experience some delay in rendering styles.
 
-== TODOs ==
+== TODO ==
 
 * Plugin documentation
 * Additional shortcodes
@@ -47,8 +47,9 @@ The styles are rendered using Javascript via VeinJS so you will experience some 
 
 == Changelog ==
 = 1.0 =
-First release
+* First release
 
 == Upgrade Notice ==
+
 = 1.0 = 
-* First release
+First release
