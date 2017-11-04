@@ -32,6 +32,5 @@ Styles are not being loaded instantly, why?
 
 ## TODOs
 
-* Add support to Shortcode UI
 * Plugin documentation
 * Additional shortcodes

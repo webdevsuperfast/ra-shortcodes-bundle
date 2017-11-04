@@ -3,7 +3,7 @@ Contributors: frodoBean
 Donate link: https://rotsenacob.com/
 Tags: shortcodes-ultimate, shortcodes, bundle, button, countdown, image, veinjs
 Requires at least: 4.7
-Tested up to: 4.8.2
+Tested up to: 4.8.3
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -40,6 +40,15 @@ The styles are rendered using Javascript via VeinJS so you will experience some 
 
 == TODOs ==
 
-* Add support to Shortcode UI
 * Plugin documentation
 * Additional shortcodes
+
+== Screenshots ==
+
+== Changelog ==
+= 1.0 =
+First release
+
+== Upgrade Notice ==
+= 1.0 = 
+* First release
