@@ -30,8 +30,8 @@ gulp.task('styles', function(){
 gulp.task('scripts', function(){
     return gulp.src([
         'public/js/sources/*.js',
-        'bower_components/jquery.countdown/dist/jquery.countdown.js',
-        'bower_components/veinjs/vein.js'
+        'node_modules/jquery.countdown/jquery.countdown.js',
+        'node_modules/veinjs/vein.js'
     ])
     .pipe(foreach(function (stream, file) {
         return stream
@@ -51,7 +51,6 @@ gulp.task('clean', function(){
 
 // Default task
 gulp.task('default', function() {
-    // gulp.start('styles', 'lint', 'scripts', 'watch');
     runSequence(
         'clean',
         ['styles', 'scripts'],
