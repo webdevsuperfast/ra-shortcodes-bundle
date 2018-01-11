@@ -29,7 +29,7 @@ gulp.task('styles', function(){
 // Vendor JS
 gulp.task('scripts', function(){
     return gulp.src([
-        'public/js/sources/*.js',
+        'public/js/shortcode.js',
         'node_modules/jquery.countdown/jquery.countdown.js',
         'node_modules/veinjs/vein.js'
     ])
