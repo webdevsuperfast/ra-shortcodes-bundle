@@ -2,14 +2,11 @@
   "name": "ra-shortcodes-bundle",
   "version": "1.0.0",
   "description": "A collection of shortcodes for WordPress built using the Shortcodes Ultimate plugin API.",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/webdevsuperfast/ra-shortcodes-bundle/"
-  },
+  "repository": "https://github.com/webdevsuperfast/ra-shortcodes-bundle/",
   "keywords": [
     "shortcodes-ultimate",
     "wordpress-plugin",
@@ -38,5 +35,6 @@
     "bourbon": "^5.0.0",
     "jquery.countdown": "^1.2.8",
     "veinjs": "https://github.com/israelidanny/veinjs"
-  }
+  },
+  "private": true
 }
